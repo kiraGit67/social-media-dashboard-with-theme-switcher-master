@@ -113,6 +113,7 @@ main {
   border-radius: 5px;
   width: 100%;
   position: relative;
+  transition: background-color 1s ease-in-out;
   /*
   border-top: 5px solid;
   border-color: transparent;
@@ -279,6 +280,7 @@ main {
 
 .light-theme .card {
   background-color: var(--card-light-bg-color);
+  transition: background-color 1s ease-in-out;
 }
 
 .light-theme .card:hover {
