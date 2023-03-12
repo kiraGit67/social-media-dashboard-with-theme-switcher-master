@@ -24,6 +24,9 @@
   --logo-twitter: url("images/icon-twitter.svg");
   --logo-instagram: url("images/icon-instagram.svg");
   --logo-youtube: url("images/icon-youtube.svg");
+
+  --icon-trend-up: url("images/icon-up.svg");
+  --icon-trend-down: url("images/icon-down.svg");
 }
 
 *,
@@ -180,6 +183,14 @@ main {
   margin-right: 0.5rem;
 }
 
+.cards.overview .card::before {
+  --card-border-background: transparent;
+}
+
+.cards.overview .card .username::before {
+  content: "";
+}
+
 .overview-row {
   display: flex;
   flex-direction: row;
@@ -212,7 +223,7 @@ main {
 }
 
 .trend.up::before {
-  content: url("images/icon-up.svg");
+  content: var(--icon-trend-up);
   margin-right: 5px;
 }
 
@@ -221,7 +232,7 @@ main {
 }
 
 .trend.down::before {
-  content: url("images/icon-down.svg");
+  content: var(--icon-trend-down);
   margin-right: 5px;
 }
 
